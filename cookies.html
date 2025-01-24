@@ -1,0 +1,26 @@
+<!DOCTYPE html/>
+<html>
+<head>
+<title>Cookie Cutting</title>
+<script type=""text/javascript"src="MyScripts.js"></script>
+</head>
+
+<body>
+<h1>Hit Counter</h1>
+
+<script language="JavaScript">
+iClickCounter = readCookie("ClickCounter");
+</script>
+
+<form method="get" action="cookies.html">
+<input type="submit" value="Click Me!"
+onClick="setCookie('ClickCounter',++iClickCounter,1);">
+</form>
+
+<p>Number of clicks:
+<script language="JavaScript">
+document.write(iClickCounter);
+</script>
+</p>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Newsletter Subscription Form</title>
+        <style>
+            h1{font-family: Comic Sans MS; color:#0000DD}
+            p{font-family: Comic Sans MS;color:#0000DD}
+            option{font-family: Comic Sans MS;color:#0000DD}
+        </style>
+    </head>
+    <body>
+        <h1>Newsletter Subscription</h1>
+        <form method="post"action=mailto:cretella@udel.edu">
+            <p> What is your name?
+                <br>
+                <input type="text"name+"name" size="50"maxlength+"150" style="border-style:inset; border-width: 3px">
+            </p>
+            <p>What is your email address?
+                <br>
+                <input type="text"name="Email" size="50" maxlength=""150" style="border-style: inset; border-width: 3px"
+            </p>
+            <p>
+                How often do you want to get our news?
+                <br>
+                <input type="radio"name="Frequency"value="daily"checked>Daily
+                <br>
+                <input type="radio"name="Frequency"value="weekly"checked>Weekly
+                <br>
+                <input type="radio"name="Frequency"value="monthly"checked>Monthly
+            </p>
+            <p>
+                What kind of news do you want?
+                <br>Please check all that apply:
+                <br>
+                <input type="checkbox" name="Breaking">Breaking news
+                <br>
+                <input type="checkbox" name="Financial">Financial news
+                <br>
+                <input type="checkbox" name="Sports">Sporting news
+                <br>
+                <input type="checkbox" name="Weather">Weather news
+                <br>
+            </p>
+            <p> What location would you like your news from:
+                <br>Please check all that apply:
+                <br>
+            <select name="Locations" size=10 multiple>
+                <option value="1">North East
+                    <option value="2">South East
+                        <option value="3">Midwest
+                            <option value="4">South West
+                                <option value="4">North West
+                            </select>                  
+           <br>
+        </p>
+            <p>
+                <input type="submit"value="Subscribe"><input type="reset"
+            </p>
+            
+        
+        </form>
+        </body>
+        </html>

@@ -1,0 +1,5 @@
+BODY {background-color:#FFFFFF}
+H1 {color:#003399; font-family: arial}
+A:link {text-decoration: underline; color:#003399;}
+A:visited {text-decoration: underline; color:#003399}
+A:hover {text-decoration: underline; color:red}

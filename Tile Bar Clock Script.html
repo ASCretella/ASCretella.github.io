@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+function clock()
+{
+	var dateNow = new Date();
+	var hour = dateNow.getHours();
+	var minute = dateNow.getMinutes();
+	var second = dateNow.getSeconds();
+
+	if (hour > 12)
+		hour -= 12;
+	if (minute < 10)
+		minute = "0" + minute;
+	if (second < 10)
+		second = "0" + second;
+
+	document.title = "The time is " + hour + ":" + minute + ":" + second;
+	setTimeout("clock()", 1000);
+}
+</script>
+</head>
+<body onLoad="clock()">
+</body>
+</html>
